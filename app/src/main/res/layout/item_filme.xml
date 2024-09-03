@@ -1,0 +1,28 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txv_titulo_filme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Título do Filme"
+        android:textSize="18sp"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txv_diretor_filme"/>
+
+    <TextView
+        android:id="@+id/txv_diretor_filme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Diretor do Filme"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txv_titulo_filme"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
